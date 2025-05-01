@@ -79,7 +79,15 @@ public class zheng_lab13Test
 			System.exit(0);
 		}
 	}
-
+	@Test
+	public void getTotalCount() { assertEquals(1000, lab.getTotalCount()); }
+	@Test
+	public void getOddCount() { assertEquals(507, lab.getOddCount()); }
+	@Test
+	public void getEvenCount() { assertEquals(493, lab.getEvenCount()); }
+	@Test
+	public void getDistinctGreaterThanFiveCount() { assertEquals(94, lab.getDistinctGreaterThanFiveCount()); }
+		
 	@Test
 	public void result1Test() {
 		assertArrayEquals(expectedResult1, lab.getResult1());

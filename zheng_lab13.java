@@ -40,7 +40,7 @@ public class zheng_lab13 {
 		return count;
 	}	
 	public long getDistinctGreaterThanFiveCount() {
-		long count = arrValues.stream().distinct().count();
+		long count = arrValues.stream().filter(x->x>5).distinct().count();
 		return count;
 	}	
 	
